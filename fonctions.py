@@ -25,8 +25,8 @@ nombre_tour = 100
 a=1
 b=2
 
-for i in range(nombre_tour) : 
-    # TOUR DU JOUEUR 1
+while current_player != [0] * nb_bateaux or next_player != [0] * nb_bateaux: 
+    # TOUR DU JOUEUR 
     print(f"Le joueur {a} doit jouer")
     position_tir = tir()
     if position_tir in next_player :
@@ -42,21 +42,5 @@ for i in range(nombre_tour) :
         print('PERDU')
     a, b = b, a
     current_player, next_player = next_player, current_player
-    
-    # TOUR DU JOUEUR 2
-    #print("C'est au tour du joueur 2 de jouer")
-    #position_tir_2 = tir()
-    #if position_tir_2 in joueur1 :
-    #    index = joueur1.index(position_tir_2)
-    #    joueur1[index] = 0
-#
-    #    print('TOUCHE') 
-#
-    #    if joueur1 == [0] * nb_bateaux:
-    #        print('LE JOUEUR 2 A GAGNE !')
-    #        break    
-    #else :
-    #    print('PERDU')
-#
 
         
